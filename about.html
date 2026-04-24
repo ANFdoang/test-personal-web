@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#9dcaff",
+                    "secondary-fixed": "#d1e4ff",
+                    "inverse-on-surface": "#2c3134",
+                    "secondary-fixed-dim": "#9dcaff",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary": "#293138",
+                    "on-error": "#690005",
+                    "on-surface-variant": "#c5c6ca",
+                    "on-primary-container": "#888c91",
+                    "on-secondary": "#003257",
+                    "primary": "#c3c7cc",
+                    "on-primary-fixed-variant": "#43474c",
+                    "surface-bright": "#353a3d",
+                    "on-primary": "#2d3135",
+                    "inverse-primary": "#5b5f63",
+                    "background": "#0f1417",
+                    "on-tertiary-container": "#858d95",
+                    "surface-container-highest": "#313539",
+                    "on-secondary-container": "#002b4c",
+                    "surface-container-high": "#262b2e",
+                    "error-container": "#93000a",
+                    "surface-container-low": "#171c1f",
+                    "tertiary-container": "#1e262c",
+                    "surface-container-lowest": "#0a0f12",
+                    "on-surface": "#dfe3e7",
+                    "tertiary-fixed-dim": "#bfc7d0",
+                    "surface": "#0f1417",
+                    "error": "#ffb4ab",
+                    "tertiary": "#bfc7d0",
+                    "tertiary-fixed": "#dbe3ec",
+                    "outline": "#8f9194",
+                    "on-primary-fixed": "#181c20",
+                    "on-tertiary-fixed": "#151c22",
+                    "outline-variant": "#44474a",
+                    "surface-variant": "#313539",
+                    "surface-container": "#1b2023",
+                    "surface-tint": "#c3c7cc",
+                    "on-secondary-fixed-variant": "#00497b",
+                    "secondary-container": "#2b95eb",
+                    "primary-container": "#212529",
+                    "inverse-surface": "#dfe3e7",
+                    "on-secondary-fixed": "#001d35",
+                    "on-tertiary-fixed-variant": "#40484e",
+                    "surface-dim": "#0f1417",
+                    "primary-fixed-dim": "#c3c7cc",
+                    "primary-fixed": "#e0e3e8",
+                    "on-background": "#dfe3e7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-lg": "3rem",
+                    "stack-sm": "0.5rem",
+                    "stack-md": "1.5rem",
+                    "section-padding": "5rem",
+                    "container-max-width": "1140px",
+                    "gutter": "1.5rem"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                    "label-sm": ["0.875rem", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                    "headline-xl": ["3.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "body-md": ["1rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "headline-md": ["1.5rem", { "lineHeight": "1.4", "fontWeight": "600" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0f1417;
+            color: #dfe3e7;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md antialiased">
+<!-- TopAppBar -->
+<nav class="bg-[#212529] dark:bg-neutral-900 border-b border-[#383D44] docked full-width top-0 z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto font-['Inter'] antialiased tracking-tight">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant">
+<img alt="Herbert Agra Profile Photo" class="w-full h-full object-cover" data-alt="Close-up portrait of Herbert Agra, a young man with a thoughtful expression in a professional dark-themed studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLzfzp-97Zp6wo-5e1MwCJhBe9UzoRoRA55dbYXfAJk76hsOovTRAYyiRT6UNCqL5rMKvsW5--gosUynWiftxii9IpMjTIlzn1de_SxmwPdNc3Dl540d6O7aP25qY9vW9NWmEuAUZoTacxKjUe7Z7DRG5gCeaiLlb3EPV902mA0_fBkf5xVg0HlYZGITic7mjBSit0Wy_BGDtudzd_hLRsjf-2kVR2kARrZy9NpAuWu59wqD9dVwsO7QFYFyctPU7DeYN_r8Sk1PKH"/>
+</div>
+<span class="text-xl font-bold tracking-widest text-slate-100">Herbert Agra</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200 text-sm" href="index.html">Home</a>
+<a class="text-[#339AF0] dark:text-blue-400 border-b-2 border-[#339AF0] pb-1 text-sm font-semibold" href="about.html">About</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200 text-sm" href="portfolio.html">Portfolio</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200 text-sm" href="contact.html">Contact</a>
+</div>
+<button class="bg-[#339AF0] text-slate-100 px-5 py-2 rounded-lg text-sm font-semibold active:scale-95 duration-150 transition-all">
+                Contact
+            </button>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-8 pt-12">
+<!-- Hero Section: Personal Bio -->
+<section class="grid md:grid-cols-12 gap-12 py-section-padding items-center">
+<div class="md:col-span-7">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-stack-md">
+                    Curiosity driven, <span class="text-secondary-container">intellectually</span> grounded.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    I am Herbert Agra Abhipraya, a student currently navigating the intersection of technology and creative logic. My journey is defined by a disciplined approach to learning, focusing on how structured thinking can solve complex digital challenges.
+                </p>
+<div class="mt-stack-lg flex gap-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="school">school</span>
+<span class="font-label-sm text-label-sm uppercase">High School Student</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-5">
+<div class="relative group">
+<div class="absolute -inset-2 bg-secondary/10 rounded-xl blur-xl group-hover:bg-secondary/20 transition duration-500"></div>
+<img alt="Creative Learner Workspace" class="relative rounded-xl border-4 border-surface-container shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 aspect-square object-cover" data-alt="Minimalist workspace with a laptop, notebook, and a single desk lamp on a dark wooden surface, professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfdEwdr5uPkSmT5xDgy6L4F2TNqaQewbaLcoRvediTjCTfQclQuRO7Q4u4m71lHmXJXpNC8UgWqSHJcBuC6H78Il7hKp-sYsvBWSA7m-JOtkeImzcw9qsdtFpB9oz52nZ87suNpdq15H2iQuJphvDPd9CL7SFpswxl-nyNpdRK2mYCxx4vvgaw0pdJMiIKzoqMVnGRiiZbnEtJFoCipB9EFBwMzoEqKp-Ztng02Bakw1jwT6vXnmoR3cK_yYIpLKkGrAaJ4c3eEVp4"/>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Education & Goals -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 py-12">
+<!-- Education Card -->
+<div class="md:col-span-2 bg-[#2C3036] border border-[#383D44] p-8 rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline-md text-headline-md text-on-surface">Education</h2>
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="history_edu">history_edu</span>
+</div>
+<div class="space-y-6">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-highest rounded-lg flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg text-on-surface">Current High School</h3>
+<p class="text-on-surface-variant mt-1">Focusing on Mathematics, Physics, and Informational Technology. Maintaining a consistent academic record while exploring extracurricular computer science initiatives.</p>
+<span class="inline-block mt-3 px-3 py-1 bg-surface-container-low text-secondary text-xs font-semibold rounded uppercase tracking-wider">2021 — Present</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Future Goals Card -->
+<div class="bg-secondary-container p-8 rounded-xl flex flex-col text-on-secondary-container">
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline-md text-headline-md">Future Goals</h2>
+<span class="material-symbols-outlined text-3xl" data-icon="rocket_launch" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<ul class="space-y-4 font-medium">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined mt-1" data-icon="check_circle">check_circle</span>
+<span>Pursue a degree in Computer Science or Software Engineering.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined mt-1" data-icon="check_circle">check_circle</span>
+<span>Contribute to open-source projects that solve real-world accessibility issues.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined mt-1" data-icon="check_circle">check_circle</span>
+<span>Master the architecture of scalable web applications.</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Hobbies Section -->
+<section class="py-20">
+<div class="flex flex-col items-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Beyond the Desk</h2>
+<p class="text-on-surface-variant mt-2">How I recharge and find inspiration.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Coding -->
+<div class="bg-[#2C3036] border border-[#383D44] p-8 rounded-xl hover:bg-[#343A40] transition-all duration-300 group">
+<div class="w-14 h-14 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="code">code</span>
+</div>
+<h3 class="font-headline-md text-xl mb-3">Coding</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        More than just a skill, it's a form of expression. I enjoy building small utilities and experimenting with new frameworks like Tailwind and React.
+                    </p>
+</div>
+<!-- Gaming -->
+<div class="bg-[#2C3036] border border-[#383D44] p-8 rounded-xl hover:bg-[#343A40] transition-all duration-300 group">
+<div class="w-14 h-14 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="sports_esports">sports_esports</span>
+</div>
+<h3 class="font-headline-md text-xl mb-3">Gaming</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Fascinated by game design and immersive storytelling. Gaming allows me to appreciate complex systems and art direction in a digital space.
+                    </p>
+</div>
+<!-- Reading -->
+<div class="bg-[#2C3036] border border-[#383D44] p-8 rounded-xl hover:bg-[#343A40] transition-all duration-300 group">
+<div class="w-14 h-14 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="menu_book">menu_book</span>
+</div>
+<h3 class="font-headline-md text-xl mb-3">Reading</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Deep diving into non-fiction and science fiction. Books help sharpen my critical thinking and broaden my perspective on the future of tech.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#212529] dark:bg-neutral-900 border-t border-[#383D44] full-width bottom-0 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto font-['Inter'] text-xs uppercase tracking-widest">
+<div class="text-slate-500 mb-6 md:mb-0">
+                © 2023 Herbert Agra Abhipraya
+            </div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-slate-200 transition-colors" href="#">GitHub</a>
+<a class="text-slate-500 hover:text-slate-200 transition-colors" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-slate-200 transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>

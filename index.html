@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#9dcaff",
+                        "secondary-fixed": "#d1e4ff",
+                        "inverse-on-surface": "#2c3134",
+                        "secondary-fixed-dim": "#9dcaff",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary": "#293138",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#c5c6ca",
+                        "on-primary-container": "#888c91",
+                        "on-secondary": "#003257",
+                        "primary": "#c3c7cc",
+                        "on-primary-fixed-variant": "#43474c",
+                        "surface-bright": "#353a3d",
+                        "on-primary": "#2d3135",
+                        "inverse-primary": "#5b5f63",
+                        "background": "#0f1417",
+                        "on-background": "#dfe3e7",
+                        "on-tertiary-container": "#858d95",
+                        "surface-container-highest": "#313539",
+                        "on-secondary-container": "#002b4c",
+                        "surface-container-high": "#262b2e",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#171c1f",
+                        "tertiary-container": "#1e262c",
+                        "surface-container-lowest": "#0a0f12",
+                        "on-surface": "#dfe3e7",
+                        "tertiary-fixed-dim": "#bfc7d0",
+                        "surface": "#0f1417",
+                        "error": "#ffb4ab",
+                        "tertiary": "#bfc7d0",
+                        "tertiary-fixed": "#dbe3ec",
+                        "outline": "#8f9194",
+                        "on-primary-fixed": "#181c20",
+                        "on-tertiary-fixed": "#151c22",
+                        "outline-variant": "#44474a",
+                        "surface-variant": "#313539",
+                        "surface-container": "#1b2023",
+                        "surface-tint": "#c3c7cc",
+                        "on-secondary-fixed-variant": "#00497b",
+                        "secondary-container": "#2b95eb",
+                        "primary-container": "#212529",
+                        "inverse-surface": "#dfe3e7",
+                        "on-secondary-fixed": "#001d35",
+                        "on-tertiary-fixed-variant": "#40484e",
+                        "surface-dim": "#0f1417",
+                        "primary-fixed-dim": "#c3c7cc",
+                        "primary-fixed": "#e0e3e8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "3rem",
+                        "stack-sm": "0.5rem",
+                        "stack-md": "1.5rem",
+                        "section-padding": "5rem",
+                        "container-max-width": "1140px",
+                        "gutter": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["2.5rem", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["0.875rem", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-xl": ["3.5rem", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["1.5rem", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0f1417;
+            color: #dfe3e7;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-background selection:bg-secondary selection:text-on-secondary">
+<!-- TopAppBar Shell -->
+<header class="bg-[#212529] dark:bg-neutral-900 border-b border-[#383D44] docked full-width top-0 z-50 fixed w-full">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto font-['Inter'] antialiased tracking-tight">
+<div class="flex items-center gap-4">
+<img alt="Herbert Agra Profile Photo" class="w-10 h-10 rounded-full border border-outline-variant" data-alt="professional portrait of a young man with a disciplined expression, soft studio lighting on dark grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiKP8Q-kH_myT1RoPdbk8lj5Hs9kYrAKrehAF1f1WCZM_0CKHEanXG-mQqndJIHcIq2Zg44U9Oe5OUA3IBuBIxs_yfLab-UEYNYYebf9kSAUwwGDvyyQ_15Ud5ZmedHrryKXM_GuJgJ4k-jqj4_QnGxScBDgFUjUubZJoBwcHWHNVcpjLJ2nsxZB1r8ChkFGx2i5Nq80rcnqymmqU7zXxuJZuV4DfmPTxbTqEMipht_eU295ESkKCyM6Xoul2LQDcGab58bKWT8NJa"/>
+<span class="text-xl font-bold tracking-widest text-slate-100">Herbert Agra</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#339AF0] dark:text-blue-400 border-b-2 border-[#339AF0] pb-1 font-medium" href="#">Home</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200" href="about.html">About</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200" href="portfolio.html">Portfolio</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200" href="contact.html">Contact</a>
+</nav>
+<button class="bg-[#339AF0] text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-500 transition-all active:scale-95 duration-150">
+                Contact
+            </button>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="w-full md:w-1/2 space-y-6">
+<div class="space-y-2">
+<span class="text-secondary font-label-sm uppercase tracking-widest">Portfolio 2024</span>
+<h1 class="text-headline-xl font-headline-xl text-on-surface">Herbert Agra Abhipraya</h1>
+<p class="text-headline-md font-headline-md text-primary">Student | Creative Learner | Web Designer</p>
+</div>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl">
+                    A dedicated high school student exploring the intersection of technology and design. Focused on building clean, functional digital experiences through disciplined learning and creative execution.
+                </p>
+<div class="flex gap-4 pt-4">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-xl font-semibold hover:bg-secondary transition-all">
+                        View Projects
+                    </button>
+<button class="border border-outline-variant text-on-surface px-8 py-3 rounded-xl font-semibold hover:bg-surface-container-high transition-all">
+                        Download CV
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex justify-center md:justify-end">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-secondary to-tertiary rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+<img alt="Herbert Agra" class="relative w-80 h-96 object-cover rounded-xl border-4 border-surface-container-highest grayscale hover:grayscale-0 transition-all duration-500" data-alt="close-up portrait of a thoughtful young male student in a dark academic setting, soft key light, sophisticated atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWK8K9LIKurwjiV27oPK045K3ac09P4vRwNTMYdXmJ02pWhNKQ-4M6PQ5jnCyDq9WR-76v689Y99zK9vpio-0Qs6nb4359s9iPPx6u7eIRKVBDNki8h3VWwvuzGrHjPZ_FcS1LWF9t4JhimXeejWSdadi-tYDdph5NA3C4vVfcoPcqmpv3AOFLqQXuXr4ClVzENCVYpQ22CtOSjAL1QT1aHVohQXpBcsVCiBL0yS0gNUqtuTMzrzgl6gAfUUqaxgwVh66amydAzrF"/>
+</div>
+</div>
+</section>
+<!-- Bio & Skills (Bento Style) -->
+<section class="max-w-7xl mx-auto px-8 py-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Bio Card -->
+<div class="md:col-span-8 bg-surface-container border border-outline-variant rounded-xl p-8 space-y-6">
+<h2 class="text-headline-md font-headline-md text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">person</span>
+                        The Journey
+                    </h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p>
+                            I am currently navigating my academic years with a keen interest in computer science and digital aesthetics. My approach is rooted in structural discipline, where every line of code serves a purpose.
+                        </p>
+<p>
+                            Beyond the classroom, I spend my time deconstructing modern web architectures and experimenting with UI patterns that prioritize the user's focus. I believe that good design is quiet—it supports the content without shouting for attention.
+                        </p>
+</div>
+</div>
+<!-- Skills Card -->
+<div class="md:col-span-4 bg-surface-container-high border border-outline-variant rounded-xl p-8 space-y-8">
+<h2 class="text-headline-md font-headline-md text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">terminal</span>
+                        My Skills
+                    </h2>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm">html</span>
+<span class="text-label-sm font-label-sm">HTML5</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm">css</span>
+<span class="text-label-sm font-label-sm">CSS3</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm">grid_view</span>
+<span class="text-label-sm font-label-sm">Bootstrap</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm">javascript</span>
+<span class="text-label-sm font-label-sm">JavaScript</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm">design_services</span>
+<span class="text-label-sm font-label-sm">UI Design</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm">data_object</span>
+<span class="text-label-sm font-label-sm">JSON</span>
+</div>
+</div>
+</div>
+<!-- Educational Focus -->
+<div class="md:col-span-12 bg-[#2C3036] border border-[#383D44] rounded-xl p-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="space-y-2 text-center md:text-left">
+<h3 class="text-headline-md font-headline-md text-on-surface">Creative Learner</h3>
+<p class="text-on-surface-variant">Continuously expanding my toolkit with modern frameworks and design principles.</p>
+</div>
+<div class="flex -space-x-4">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest border-4 border-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">code</span>
+</div>
+<div class="w-16 h-16 rounded-full bg-surface-container-highest border-4 border-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">palette</span>
+</div>
+<div class="w-16 h-16 rounded-full bg-surface-container-highest border-4 border-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">auto_stories</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#212529] dark:bg-neutral-900 border-t border-[#383D44] full-width bottom-0 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto">
+<p class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 mb-6 md:mb-0">
+                © 2023 Herbert Agra Abhipraya
+            </p>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-200 transition-colors" href="#">GitHub</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-200 transition-colors" href="#">LinkedIn</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-200 transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>

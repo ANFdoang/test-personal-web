@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#9dcaff",
+                    "secondary-fixed": "#d1e4ff",
+                    "inverse-on-surface": "#2c3134",
+                    "secondary-fixed-dim": "#9dcaff",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary": "#293138",
+                    "on-error": "#690005",
+                    "on-surface-variant": "#c5c6ca",
+                    "on-primary-container": "#888c91",
+                    "on-secondary": "#003257",
+                    "primary": "#c3c7cc",
+                    "on-primary-fixed-variant": "#43474c",
+                    "surface-bright": "#353a3d",
+                    "on-primary": "#2d3135",
+                    "inverse-primary": "#5b5f63",
+                    "background": "#0f1417",
+                    "on-tertiary-container": "#858d95",
+                    "surface-container-highest": "#313539",
+                    "on-secondary-container": "#002b4c",
+                    "surface-container-high": "#262b2e",
+                    "error-container": "#93000a",
+                    "surface-container-low": "#171c1f",
+                    "tertiary-container": "#1e262c",
+                    "surface-container-lowest": "#0a0f12",
+                    "on-surface": "#dfe3e7",
+                    "tertiary-fixed-dim": "#bfc7d0",
+                    "surface": "#0f1417",
+                    "error": "#ffb4ab",
+                    "tertiary": "#bfc7d0",
+                    "tertiary-fixed": "#dbe3ec",
+                    "outline": "#8f9194",
+                    "on-primary-fixed": "#181c20",
+                    "on-tertiary-fixed": "#151c22",
+                    "outline-variant": "#44474a",
+                    "surface-variant": "#313539",
+                    "surface-container": "#1b2023",
+                    "surface-tint": "#c3c7cc",
+                    "on-secondary-fixed-variant": "#00497b",
+                    "secondary-container": "#2b95eb",
+                    "primary-container": "#212529",
+                    "inverse-surface": "#dfe3e7",
+                    "on-secondary-fixed": "#001d35",
+                    "on-tertiary-fixed-variant": "#40484e",
+                    "surface-dim": "#0f1417",
+                    "primary-fixed-dim": "#c3c7cc",
+                    "primary-fixed": "#e0e3e8",
+                    "on-background": "#dfe3e7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-lg": "3rem",
+                    "stack-sm": "0.5rem",
+                    "stack-md": "1.5rem",
+                    "section-padding": "5rem",
+                    "container-max-width": "1140px",
+                    "gutter": "1.5rem"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["2.5rem", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-sm": ["0.875rem", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-xl": ["3.5rem", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["1.5rem", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-[#212529] dark:bg-neutral-900 border-b border-[#383D44] docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto font-['Inter'] antialiased tracking-tight">
+<div class="flex items-center gap-4">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="close-up portrait of Herbert Agra, a young academic professional in a minimal studio setting with soft side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYQsVQBTkKt3M6ymMB6yIqiOzGHa3jfkQd6asRirzjZjnx9svdNWFGs89DhN-LKZ8Ld6DFOcxPH06fXimsTcEADzIrEPsYzdd7AFGb7_qURs3ELGCrLFCIMJEP_RtGBQsGBi9KfhDtIiE0wGcAAn4waBal2C54YeNbt3-BComHUILXnokbV0YecpE2iKgYKqZrXcvc3DbOba4VzFCxZr-M5BrV1VzMz70oHhHjqOvPiBkwMxdtJ3d9kSNMTxNUuIb_M_-Ef8t_E9bw"/>
+<span class="text-xl font-bold tracking-widest text-slate-100">Herbert Agra</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200" href="index.html">Home</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200" href="about.html">About</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200" href="portfolio.html">Portfolio</a>
+<a class="text-[#339AF0] dark:text-blue-400 border-b-2 border-[#339AF0] pb-1" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-2 text-[#339AF0] dark:text-blue-400 font-semibold cursor-pointer hover:bg-[#2C3036] transition-all duration-300 px-4 py-2 rounded active:scale-95">
+                Contact
+            </div>
+</div>
+</header>
+<main class="flex-grow max-w-7xl mx-auto w-full px-8 py-section-padding">
+<!-- Contact Layout (Asymmetric / Bento Influence) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Information Column -->
+<div class="lg:col-span-5 space-y-stack-lg">
+<div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-stack-md">Get in touch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        Have a project in mind or just want to discuss academic research? I'm always open to intellectual exchange and creative collaborations.
+                    </p>
+</div>
+<!-- Contact Details Card -->
+<div class="bg-[#2C3036] border border-[#383D44] p-stack-md rounded-xl space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Email</p>
+<p class="font-body-md text-body-md text-on-surface">hello@herbertagra.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Location</p>
+<p class="font-body-md text-body-md text-on-surface">Jakarta, Indonesia</p>
+</div>
+</div>
+</div>
+<!-- Social Links -->
+<div class="space-y-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Connect Elsewhere</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-[#383D44] rounded flex items-center justify-center text-on-surface-variant hover:text-secondary hover:border-secondary transition-all" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="w-10 h-10 border border-[#383D44] rounded flex items-center justify-center text-on-surface-variant hover:text-secondary hover:border-secondary transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="w-10 h-10 border border-[#383D44] rounded flex items-center justify-center text-on-surface-variant hover:text-secondary hover:border-secondary transition-all" href="#">
+<span class="material-symbols-outlined">groups</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Form Column -->
+<div class="lg:col-span-7 bg-[#2C3036] border border-[#383D44] rounded-xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+<!-- Subtle Gradient Accent -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 blur-3xl rounded-full -mr-16 -mt-16"></div>
+<form class="space-y-6 relative z-10" id="contactForm" onsubmit="return validateForm(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant block" for="name">FULL NAME</label>
+<input class="w-full bg-[#343A40] border-[#495057] text-[#DEE2E6] rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#339AF0]/20 focus:border-[#339AF0] transition-all outline-none" id="name" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant block" for="email">EMAIL ADDRESS</label>
+<input class="w-full bg-[#343A40] border-[#495057] text-[#DEE2E6] rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#339AF0]/20 focus:border-[#339AF0] transition-all outline-none" id="email" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant block" for="message">YOUR MESSAGE</label>
+<textarea class="w-full bg-[#343A40] border-[#495057] text-[#DEE2E6] rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#339AF0]/20 focus:border-[#339AF0] transition-all outline-none resize-none" id="message" placeholder="How can I help you today?" rows="6"></textarea>
+</div>
+<button class="w-full md:w-auto px-12 py-4 bg-[#339AF0] text-white font-semibold rounded-lg hover:bg-[#2b95eb] hover:-translate-y-0.5 active:translate-y-0 transition-all shadow-lg shadow-blue-500/10 flex items-center justify-center gap-2" type="submit">
+                        Send Message
+                        <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#212529] dark:bg-neutral-900 border-t border-[#383D44] full-width bottom-0">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 mt-20 max-w-7xl mx-auto font-['Inter'] text-xs uppercase tracking-widest text-slate-500">
+<p>© 2023 Herbert Agra Abhipraya</p>
+<div class="flex gap-8 mt-6 md:mt-0">
+<a class="hover:text-slate-200 transition-colors" href="#">GitHub</a>
+<a class="hover:text-slate-200 transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-slate-200 transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+<script>
+        function validateForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                alert('Please fill in all fields before sending.');
+                return false;
+            }
+
+            if (!email.includes('@')) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            alert('Thank you, ' + name + '! Your message has been sent successfully.');
+            document.getElementById('contactForm').reset();
+            return true;
+        }
+    </script>
+</body></html>

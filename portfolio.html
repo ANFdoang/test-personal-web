@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#9dcaff",
+                        "secondary-fixed": "#d1e4ff",
+                        "inverse-on-surface": "#2c3134",
+                        "secondary-fixed-dim": "#9dcaff",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary": "#293138",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#c5c6ca",
+                        "on-primary-container": "#888c91",
+                        "on-secondary": "#003257",
+                        "primary": "#c3c7cc",
+                        "on-primary-fixed-variant": "#43474c",
+                        "surface-bright": "#353a3d",
+                        "on-primary": "#2d3135",
+                        "inverse-primary": "#5b5f63",
+                        "background": "#0f1417",
+                        "on-background": "#dfe3e7",
+                        "on-tertiary-container": "#858d95",
+                        "surface-container-highest": "#313539",
+                        "on-secondary-container": "#002b4c",
+                        "surface-container-high": "#262b2e",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#171c1f",
+                        "tertiary-container": "#1e262c",
+                        "surface-container-lowest": "#0a0f12",
+                        "on-surface": "#dfe3e7",
+                        "tertiary-fixed-dim": "#bfc7d0",
+                        "surface": "#0f1417",
+                        "error": "#ffb4ab",
+                        "tertiary": "#bfc7d0",
+                        "tertiary-fixed": "#dbe3ec",
+                        "outline": "#8f9194",
+                        "on-primary-fixed": "#181c20",
+                        "on-tertiary-fixed": "#151c22",
+                        "outline-variant": "#44474a",
+                        "surface-variant": "#313539",
+                        "surface-container": "#1b2023",
+                        "surface-tint": "#c3c7cc",
+                        "on-secondary-fixed-variant": "#00497b",
+                        "secondary-container": "#2b95eb",
+                        "primary-container": "#212529",
+                        "inverse-surface": "#dfe3e7",
+                        "on-secondary-fixed": "#001d35",
+                        "on-tertiary-fixed-variant": "#40484e",
+                        "surface-dim": "#0f1417",
+                        "primary-fixed-dim": "#c3c7cc",
+                        "primary-fixed": "#e0e3e8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "3rem",
+                        "stack-sm": "0.5rem",
+                        "stack-md": "1.5rem",
+                        "section-padding": "5rem",
+                        "container-max-width": "1140px",
+                        "gutter": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-sm": ["0.875rem", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-xl": ["3.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["1rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["1.5rem", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="bg-[#212529] dark:bg-neutral-900 border-b border-[#383D44] docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<img alt="Herbert Agra Profile Photo" class="w-full h-full object-cover" data-alt="professional close-up portrait of a young man with a focused and creative expression against a dark neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-q6gGTvDYzQFlmutcEYfQdgyP3LYqTx5mkiiIrWKYbgBelATqwdd2Phetf8ssVTspMurRalZRjjBxp7NCF69M4vxRE-ecneKFclRfHSqvz5oNY9uU4GKn4ru13uxTz-HiKAWA5PLIxd30hJKz-xP3oXlp2_ObmqdDDggN9y7qgSBSkHpxnwpwGSmT8sXtgbFY-IJZ5ZnOe2UeamMDUjfHA-SsQlsoOLafM41q9WST_RwyalpzVEG9WTXZIMI9LrQj3RWQ9HxRhzAg"/>
+</div>
+<span class="text-xl font-bold tracking-widest text-slate-100 font-headline-md">Herbert Agra</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-[#339AF0] dark:text-blue-400 border-b-2 border-[#339AF0] pb-1 font-label-sm text-sm" href="portfolio.html">Portfolio</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200 font-label-sm text-sm" href="about.html">About</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors duration-200 font-label-sm text-sm" href="index.html">Home</a>
+</nav>
+<button class="bg-[#212529] border border-[#383D44] text-[#339AF0] px-6 py-2 rounded transition-all duration-300 hover:bg-[#2C3036] active:scale-95 font-label-sm">
+                Contact
+            </button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-8">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row items-center justify-between py-section-padding gap-gutter">
+<div class="w-full md:w-3/5 space-y-stack-md">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+                    Creative Learner <br/>
+<span class="text-[#339AF0]">Building Digital Solutions.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    I am Herbert Agra Abhipraya, a student dedicated to blending disciplined research with modern design principles. Exploring the intersection of technology and human-centered design.
+                </p>
+<div class="flex gap-4 pt-4">
+<button class="bg-[#339AF0] text-white px-8 py-3 rounded-lg font-label-sm transition-transform hover:-translate-y-1">
+                        View Projects
+                    </button>
+<button class="border border-[#383D44] text-on-surface px-8 py-3 rounded-lg font-label-sm hover:bg-surface-container transition-colors">
+                        Download CV
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-2/5 flex justify-center">
+<div class="relative w-full aspect-square max-w-md rounded-xl overflow-hidden border-[0.5rem] border-[#2C3036] shadow-2xl group">
+<img alt="Work Environment" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" data-alt="overhead shot of a clean minimalist desk with a mechanical keyboard, code on a monitor, and a small succulent plant in soft evening light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj316lzv1WunwZHopxIno8iaUHF-YEib-agndF87baDxwN87VZLDcINE2SqmVQKWbZDdrAHEQ2v-m5dC7REShnRDdIbD3PZDx6dnvXMBAaDbBsquT4hm12NcbSBipjtNUjbGXGqI8wxW1UVErYHMd0w5mSWSryf6Xv8-SG7HbMXhrBB-9LLT6oX9_6rRD5iItLKsqnq-917Uw0m8hKSemgU0w06oz4TQvyLMw3okvY6J7jdSzrqaGMW6HRbOyq3g2geVmT-VZ5OEH2"/>
+</div>
+</div>
+</section>
+<!-- Projects Grid Section -->
+<section class="py-section-padding">
+<div class="mb-stack-lg space-y-2">
+<h2 class="font-headline-lg text-headline-lg">Selected Projects</h2>
+<div class="h-1 w-20 bg-[#339AF0]"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="bg-[#2C3036] border border-[#383D44] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+<div class="h-48 overflow-hidden">
+<img alt="UI Design Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close-up of a high-fidelity mobile app interface design showing sleek typography and deep blue accent colors on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNbSpA679oG80yrBMeq0Yy_XsVfA5mzTmLQuhTUB41_9KVOSmbwcbYm3traZyBBy8ubEmxxQ6KwB33bzFHKktAx3P6qAXuraL5o7Mc1oc1j_i1z24Z_m7HtSiCWu5QI2T410NouJgL9qsGtNy4ujhX_i6sGpyKVjEx3XzDEpNIvY8CPeIoxGBAzTlpIkIPl3Tyn9G6mdiCnVdUoFxh2uCY_G6RlL8krlG1SRi5LiyQH3Rikl0oWG8pCvQ7VAtvCjzYljgWrn6jBSYD"/>
+</div>
+<div class="p-6 space-y-stack-md">
+<div class="flex gap-2">
+<span class="bg-[#343A40] text-[#ADB5BD] px-3 py-1 rounded-full text-[0.7rem] uppercase tracking-wider font-bold">Design</span>
+<span class="bg-[#343A40] text-[#ADB5BD] px-3 py-1 rounded-full text-[0.7rem] uppercase tracking-wider font-bold">Mobile</span>
+</div>
+<h3 class="font-headline-md text-headline-md">EcoTrack Mobile</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3">
+                            A comprehensive student project focused on monitoring carbon footprints through a simplified daily log and data visualization interface.
+                        </p>
+<button class="bg-[#339AF0] text-white w-full py-2 rounded font-label-sm transition-colors hover:bg-blue-600 flex items-center justify-center gap-2">
+                            View Project
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="bg-[#2C3036] border border-[#383D44] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+<div class="h-48 overflow-hidden">
+<img alt="Web App Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="laptop screen displaying complex code snippets in a dark-themed editor with vibrant syntax highlighting and soft room lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7FA3-0K0xFFMy4nJIiGyP3LAaj0VEO2QcoZMXGH61l4bSxCiFWUCKdbULGeuGR0wgxRLvfXcHpysgJEidVknz7yfIRY6AnuqntUOQrQ7qE8j71OAdcEbk2ZueFu1TQdEWdf80eCdtrb_1UPCGdD2johFGOq4caprlsVzQqvA9EVRf3LzGm_jyPdmjkAEgEw3dgR753bT7HbEgtwfl7aabJf1H-3XygFGJv2Mnu2pS8djs2-wTDqygv27N9rAu-9PU8KOGc6KlByFG"/>
+</div>
+<div class="p-6 space-y-stack-md">
+<div class="flex gap-2">
+<span class="bg-[#343A40] text-[#ADB5BD] px-3 py-1 rounded-full text-[0.7rem] uppercase tracking-wider font-bold">Web</span>
+<span class="bg-[#343A40] text-[#ADB5BD] px-3 py-1 rounded-full text-[0.7rem] uppercase tracking-wider font-bold">Frontend</span>
+</div>
+<h3 class="font-headline-md text-headline-md">KnowledgeHub</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3">
+                            A centralized library portal designed for school academic resources, utilizing a robust search engine and categorized tagging system.
+                        </p>
+<button class="bg-[#339AF0] text-white w-full py-2 rounded font-label-sm transition-colors hover:bg-blue-600 flex items-center justify-center gap-2">
+                            View Project
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="bg-[#2C3036] border border-[#383D44] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+<div class="h-48 overflow-hidden">
+<img alt="Data Science Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="clean minimal dashboard with various bar charts and line graphs showing trends in blue and grey tones on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc3XrEOQiusvb7Ll4CnTVGzPNdV2lvFpeAgMo8kwcwJRac_LlOgycHqk8aGHgf76C2epfhvMR6z87z1bppqGyjHtuWayhA-zsV_QakIYB8da12JCSQAyfuRIa5ZHMBPkDzAD78bWG4wUy5f1O8fv2l8fcHtWVzBidT10FjPunwpCfXp82OrAYX-f8yBBpu6w9ZA21gYVNlovgd7-cP8_JLxIHu-R5FANqqV-lT2wUameo7OOVmPxNrWMyluIWkIZPDTeNL1hHsFIW1"/>
+</div>
+<div class="p-6 space-y-stack-md">
+<div class="flex gap-2">
+<span class="bg-[#343A40] text-[#ADB5BD] px-3 py-1 rounded-full text-[0.7rem] uppercase tracking-wider font-bold">Data</span>
+<span class="bg-[#343A40] text-[#ADB5BD] px-3 py-1 rounded-full text-[0.7rem] uppercase tracking-wider font-bold">Analytics</span>
+</div>
+<h3 class="font-headline-md text-headline-md">Student Insights</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3">
+                            An analytical dashboard project visualizing student performance trends and attendance metrics through interactive SVG charting.
+                        </p>
+<button class="bg-[#339AF0] text-white w-full py-2 rounded font-label-sm transition-colors hover:bg-blue-600 flex items-center justify-center gap-2">
+                            View Project
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#212529] dark:bg-neutral-900 border-t border-[#383D44] full-width bottom-0 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2 items-center md:items-start">
+<span class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500">© 2023 Herbert Agra Abhipraya</span>
+<span class="text-[0.65rem] text-slate-600 uppercase tracking-widest font-bold">Creative Learner • Designer • Developer</span>
+</div>
+<div class="flex gap-12 mt-8 md:mt-0">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-200 transition-colors" href="#">GitHub</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-200 transition-colors" href="#">LinkedIn</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-200 transition-colors" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+<!-- NavigationDrawer (Mobile Only Mockup) -->
+<div class="md:hidden fixed inset-y-0 left-0 w-64 bg-[#2C3036] border-r border-[#383D44] shadow-2xl z-[60] -translate-x-full transition-transform duration-300">
+<div class="p-6 border-b border-[#383D44]">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-[#339AF0]/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-[#339AF0]">person</span>
+</div>
+<div>
+<h4 class="text-slate-100 font-bold text-sm">Herbert Agra</h4>
+<p class="text-slate-400 text-xs">Creative Learner</p>
+</div>
+</div>
+</div>
+<nav class="p-4 space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 bg-[#339AF0]/10 text-[#339AF0] font-semibold rounded-md text-sm" href="#">
+<span class="material-symbols-outlined">home</span> Home
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-400 hover:bg-[#343A40] rounded-md text-sm" href="#">
+<span class="material-symbols-outlined">person</span> About
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-400 hover:bg-[#343A40] rounded-md text-sm" href="#">
+<span class="material-symbols-outlined">work</span> Portfolio
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-400 hover:bg-[#343A40] rounded-md text-sm" href="#">
+<span class="material-symbols-outlined">mail</span> Contact
+            </a>
+</nav>
+</div>
+</body></html>
